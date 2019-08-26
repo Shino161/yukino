@@ -1,5 +1,5 @@
 # yukino
-![logo@2x.jpeg](https://i.loli.net/2019/08/23/gp1HfGPwKsW9BZO.jpg)
+![logo@2x.jpeg](https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg)
 ## 简介 Introduction
 一个React前端脚手架
 
