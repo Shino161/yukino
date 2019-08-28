@@ -6,7 +6,7 @@ const { resolve } = require('path');
 module.exports = {
   entry: './src/index.js', 
   module: {
-    noParse: /jquery|lodash/,
+    noParse: /jquery/,
     rules: [
 			{
         test: /\.(js|jsx)$/,
@@ -18,7 +18,6 @@ module.exports = {
         loader: "url-loader?limit=10240&name=assets/img/[name]_[hash].[ext]",
       }
 		],
-		
   },
   plugins: [
     new CaseSensitivePathsPlugin(),
