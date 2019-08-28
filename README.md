@@ -25,6 +25,6 @@ npm run build:prod / yarn run prod:dev
 
 ## 运行Docker版本
 ```bush
-docker build -t daoko:1
-docker run -d --name daoko -p 8099:80 daoko:1
+docker build -t yukino:1
+docker run -d --name yukino -p 8099:80 yukino:1
 ```
