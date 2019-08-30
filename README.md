@@ -1,7 +1,8 @@
 # yukino
 ![logo@2x.jpeg](https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg)
 
-[![Badge](https://img.shields.io/drone/build/shino161/yukino)]
+![](https://img.shields.io/badge/language-JavaScript-orange.svg)
+![](https://img.shields.io/badge/language-TypeScript-blue.svg)
   
 
 ## 简介 Introduction
