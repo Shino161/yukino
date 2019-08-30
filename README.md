@@ -4,7 +4,7 @@
 一个React前端脚手架
 
 ## 演示地址
-http://rain.cocoiii.com
+
 
 ## 如何使用 How to use it
 ### 安装运行
