@@ -22,7 +22,6 @@ class App extends Component {
           </Header>
           <Content style={{ padding: '0 50px' }}>
             <div style={{  padding: 24, minHeight: 280 }}>
-              
               <Carousel autoplay >
                 <div>
                   <h3>1</h3>

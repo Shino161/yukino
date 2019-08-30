@@ -1,6 +1,7 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CaseSensitivePathsPlugin = require('case-sensitive-paths-webpack-plugin');
+const tsImportPluginFactory = require('ts-import-plugin')
 const { resolve } = require('path');
 
 module.exports = {
@@ -9,8 +10,21 @@ module.exports = {
     noParse: /jquery/,
     rules: [
       {
-        test: /\.tsx?$/,
-        use: 'ts-loader',
+        test: /\.(jsx|tsx|js|ts)$/,
+        loader: 'ts-loader',
+        options: {
+          transpileOnly: true,
+          getCustomTransformers: () => ({
+            before: [tsImportPluginFactory({
+              libraryName: 'antd',
+              libraryDirectory: 'lib',
+              style: true
+            })]
+          }),
+          compilerOptions: {
+            module: 'es2015'
+          }
+        },
         exclude: /node_modules/
       },
       {
