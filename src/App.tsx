@@ -8,10 +8,9 @@ class App extends Component {
     return (
       <div className="App">
         <Layout className="layout">
-          <Header>
-            <div className="logo" />
+          <Header style={{ backgroundColor: '#fff', textAlign: ''}}>
             <Menu
-              theme="dark"
+              theme="light"
               mode="horizontal"
               defaultSelectedKeys={['2']}
               style={{ lineHeight: '64px' }}
@@ -22,21 +21,24 @@ class App extends Component {
             </Menu>
           </Header>
           <Content style={{ padding: '0 50px' }}>
-            {/* <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>Content</div> */}
-            <Carousel autoplay>
-              <div>
-                <h3>1</h3>
-              </div>
-              <div>
-                <h3>2</h3>
-              </div>
-              <div>
-                <h3>3</h3>
-              </div>
-              <div>
-                <h3>4</h3>
-              </div>
-            </Carousel>
+            <div style={{  padding: 24, minHeight: 280 }}>
+              
+              <Carousel autoplay >
+                <div>
+                  <h3>1</h3>
+                </div>
+                <div>
+                  <h3>2</h3>
+                </div>
+                <div>
+                  <h3>3</h3>
+                </div>
+                <div>
+                  <h3>4</h3>
+                </div>
+              </Carousel>
+            </div>
+
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
         </Layout>

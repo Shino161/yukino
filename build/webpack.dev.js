@@ -4,7 +4,7 @@ const path = require('path');
 
 
 module.exports = merge(common, {
-  devtool: 'cheap-module-eval-source-map',
+  devtool: 'inline-source-map',
   mode: 'development',
   output: { 
     filename: 'js/[name].[hash].js',
