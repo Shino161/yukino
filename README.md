@@ -1,9 +1,8 @@
 # yukino
-![logo@2x.jpeg](https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg)
-
 ![](https://img.shields.io/badge/language-JavaScript-orange.svg)
 ![](https://img.shields.io/badge/language-TypeScript-blue.svg)
-  
+
+![logo@2x.jpeg](https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg)  
 
 ## 简介 Introduction
 一个 React + Ant-Design 前端脚手架,支持 TypeScript & JavaScript。
