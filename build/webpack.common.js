@@ -6,6 +6,12 @@ const { resolve } = require('path');
 
 module.exports = {
   entry: './src/index.tsx',
+  output: {
+    filename: 'js/[name].[hash].js',
+    chunkFilename: 'js/[name].[hash].js',
+    path: path.resolve(__dirname, '../dist'),
+    publicPath: '/'
+  },
   module: {
     noParse: /jquery/,
     rules: [

@@ -1,6 +1,7 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import "./App.css";
-import { Layout, Menu, Carousel, Select } from 'antd';
+import { Layout, Menu, Skeleton } from 'antd';
+const ContentView = lazy(() => import('./ContentView'));
 const { Header, Content, Footer } = Layout;
 
 class App extends Component {
@@ -8,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <Layout className="layout">
-          <Header style={{ backgroundColor: '#fff', textAlign: ''}}>
+          <Header style={{ backgroundColor: '#fff', textAlign: 'right'}}>
             <Menu
               theme="light"
               mode="horizontal"
@@ -22,22 +23,10 @@ class App extends Component {
           </Header>
           <Content style={{ padding: '0 50px' }}>
             <div style={{  padding: 24, minHeight: 280 }}>
-              <Carousel autoplay >
-                <div>
-                  <h3>1</h3>
-                </div>
-                <div>
-                  <h3>2</h3>
-                </div>
-                <div>
-                  <h3>3</h3>
-                </div>
-                <div>
-                  <h3>4</h3>
-                </div>
-              </Carousel>
+              <Suspense fallback={<Skeleton active />}>
+                <ContentView />
+              </Suspense>
             </div>
-
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
         </Layout>

@@ -30,7 +30,6 @@ module.exports = merge(common, {
             new UglifyJsPlugin({
                 uglifyOptions: {
                     compress: {
-                        warnings: false,
                         drop_debugger: true,
                         drop_console: true,
                     },
@@ -101,9 +100,4 @@ module.exports = merge(common, {
         ]),
     ],
     mode: 'production',
-    output: {
-        filename: 'js/[name].[contenthash].js',
-        path: path.resolve(__dirname, '../dist'),
-        publicPath: '/'
-    },
 });
