@@ -14,6 +14,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = merge(common, {
     devtool: 'cheap-module-source-map',
     optimization: {
+        // 模块之间通过路径引用，避免新加入的模块导致模块id发生变化
+        namedChunks: true,
         // 分离chunks
         splitChunks: {
             chunks: 'all',
@@ -88,8 +90,8 @@ module.exports = merge(common, {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: 'css/[name].[hash].css',
-            chunkFilename: 'css/[id].[hash].css',
+            filename: 'css/[name].[contenthash].css',
+            chunkFilename: 'css/[id].[contenthash].css',
         }),
         new CopyWebpackPlugin([
             {

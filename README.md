@@ -7,7 +7,8 @@
 ## 简介 Introduction
 一个 React + Ant-Design 前端脚手架,支持 TypeScript & JavaScript。
 + 使用 Webpack4 打包，构建速度优异 ✨
-+ 没有多余的 Node 模块 ✨
++ 通过 chunkash 和 contenthash 进行前端资源的缓存 ✨
++ 通过 React.lazy 进行组件懒加载 ✨
 + TS 或者 JS 均可按需引用 Antd 组件 ✨
 
 ## 演示地址
@@ -32,6 +33,6 @@ npm run build:prod / yarn run prod:dev
 
 ## 运行Docker版本
 ```bush
-docker build -t yukino:1 .
-docker run -d --name yukino -p 8099:80 yukino:1
+docker build -t yukino .
+docker run -d --name yukino -p 8099:80 yukino
 ```
