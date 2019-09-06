@@ -13,6 +13,12 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin')
 module.exports = merge(common, {
     devtool: 'cheap-module-source-map',
+    output: {
+        filename: 'js/[name].[chunkhash].js',
+        chunkFilename: 'js/[name].[chunkhash].js',
+        path: path.resolve(__dirname, '../dist'),
+        publicPath: '/'
+    },
     optimization: {
         // 模块之间通过路径引用，避免新加入的模块导致模块id发生变化
         namedChunks: true,

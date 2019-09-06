@@ -6,6 +6,12 @@ const path = require('path');
 module.exports = merge(common, {
   devtool: 'inline-source-map',
   mode: 'development',
+  output: {
+    filename: 'js/[name].[hash].js',
+    chunkFilename: 'js/[name].[hash].js',
+    path: path.resolve(__dirname, '../dist'),
+    publicPath: '/'
+  },
   module: {
     rules:[
       {

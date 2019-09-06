@@ -11,6 +11,8 @@
 + 通过 React.lazy 进行组件懒加载 ✨
 + TS 或者 JS 均可按需引用 Antd 组件 ✨
 
+![1567754482325.jpg](https://i.loli.net/2019/09/06/p8Ktkc1UQDJ7dFH.jpg)
+
 ## 演示地址
 http://hensin.cocoiii.com/
 
