@@ -44,7 +44,7 @@ class ContentView extends Component {
         <Row gutter={16}>
           <Steps current={1}>
             <Step title="Finished" description="This is a description." />
-            <Step title="In Progress" subTitle="Left 00:00:08" description="This is a description." />
+            <Step title="In Progress" description="This is a description." subTitle="Left 00:00:08"/>
             <Step title="Waiting" description="This is a description." />
           </Steps>
         </Row>

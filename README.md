@@ -36,5 +36,5 @@ npm run build:prod / yarn run prod:dev
 ## 运行Docker版本
 ```bush
 docker build -t yukino .
-docker run -d --name yukino -p 8099:80 yukino
+docker run -d --name yukino -p8099:80 yukino
 ```
