@@ -25,7 +25,7 @@ jobs:
     - name: Docker Registry
       uses: actions/docker/login@master
       env:
-        DOCKER_REGISTRY_URL: registry.cn-hangzhou.aliyuncs.com
+        DOCKER_REGISTRY_URL: registry.cn-hongkong.aliyuncs.com
         DOCKER_USERNAME: ${{secrets.docker_username}}
         DOCKER_PASSWORD: ${{secrets.docker_password}}
         
@@ -33,4 +33,4 @@ jobs:
       run: docker build . --file Dockerfile --tag registry.cn-hongkong.aliyuncs.com/yukino/yukino:10086
       
     - name: Push the Docker image
-      run: docker push registry.cn-hangzhou.aliyuncs.com/yukino/yukino:10086
+      run: docker push registry.cn-hongkong.aliyuncs.com/yukino/yukino:10086
