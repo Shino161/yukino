@@ -30,7 +30,7 @@ jobs:
         DOCKER_PASSWORD: ${{secrets.docker_password}}
         
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/yukino/yukino:10086
+      run: sudo docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/yukino/yukino:10086
       
     - name: Push the Docker image
-      run: docker push registry.cn-hangzhou.aliyuncs.com/yukino/yukino:10086
+      run: sudo docker push registry.cn-hangzhou.aliyuncs.com/yukino/yukino:10086
