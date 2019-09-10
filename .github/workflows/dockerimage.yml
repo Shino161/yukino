@@ -1,0 +1,34 @@
+name: Docker Image CI
+
+on: [push]
+
+jobs:
+
+  build:
+ 
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Set Node.js 10.x
+      uses: actions/setup-node@master
+      with:
+        version: 10.x
+
+    - name: Build dist      
+      run: |
+        npm install
+        npm run build:prod --if-present
+        
+    - name: Build the Docker image
+      run: docker build . --file Dockerfile --tag registry.cn-hongkong.aliyuncs.com/shino161/yukino:1
+      
+    - name: Push the Docker image
+      uses: actions/docker/login@master
+      env:
+        DOCKER_REGISTRY_URL: registry.cn-hongkong.aliyuncs.com
+        DOCKER_USERNAME: ${{secrets.docker_username}}
+        DOCKER_PASSWORD: ${{secrets.docker_password}}
+      run: docker push registry.cn-hongkong.aliyuncs.com/shino161/yukino:1
