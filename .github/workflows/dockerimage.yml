@@ -30,7 +30,7 @@ jobs:
         DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/yukino/yukino:${{GITHUB_SHA}}
+      run: docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/yukino/yukino:${GITHUB_SHA}
       
     - name: Push the Docker image
-      run: docker push registry.cn-hangzhou.aliyuncs.com/yukino/yukino:${{GITHUB_SHA}}
+      run: docker push registry.cn-hangzhou.aliyuncs.com/yukino/yukino:${GITHUB_SHA}
