@@ -1,7 +1,7 @@
 # yukino
 ![](https://img.shields.io/badge/language-JavaScript-orange.svg)
 ![](https://img.shields.io/badge/language-TypeScript-blue.svg)
-
+[![Actions Status](https://xxx.execute-api.us-west-2.amazonaws.com/production/badge/{Shino161}/{yukino})](https://xxx.execute-api.us-west-2.amazonaws.com/production/results/{Shino161}/{yukino})
 ![logo@2x.jpeg](https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg)  
 
 ## 简介 Introduction
