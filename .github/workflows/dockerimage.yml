@@ -25,10 +25,10 @@ jobs:
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag registry.cn-hongkong.aliyuncs.com/shino161/yukino:1
       
+    - name: Docker Registry
+      run: docker login --username=${{secrets.docker_username}} --password=${{secrets.docker_password}} registry.cn-hongkong.aliyuncs.com
+         
     - name: Push the Docker image
-      uses: actions/docker/login@master
-      env:
-        DOCKER_REGISTRY_URL: registry.cn-hongkong.aliyuncs.com
-        DOCKER_USERNAME: ${{secrets.docker_username}}
-        DOCKER_PASSWORD: ${{secrets.docker_password}}
       run: docker push registry.cn-hongkong.aliyuncs.com/shino161/yukino:1
+
+
