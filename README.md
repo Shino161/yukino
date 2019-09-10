@@ -1,7 +1,7 @@
 # yukino
 ![](https://img.shields.io/badge/language-JavaScript-orange.svg)
 ![](https://img.shields.io/badge/language-TypeScript-blue.svg)
-![](https://github.com/Shino161/yukino/workflows/Docker Image CI/badge.svg)  
+![](https://github.com/Shino161/yukino/workflows/Docker-Image-CI/badge.svg)  
 
   
 ![logo@2x.jpeg](https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg)  
