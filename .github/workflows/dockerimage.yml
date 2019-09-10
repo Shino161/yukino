@@ -23,12 +23,12 @@ jobs:
         npm run build:prod --if-present
         
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag registry.cn-hongkong.aliyuncs.com/shino161/yukino:1
+      run: docker build . --file Dockerfile --tag registry.cn-hongkong.aliyuncs.com/shino161/yukino:${GITHUB_SHA}
       
     - name: Docker Registry
       run: docker login --username=${{secrets.docker_username}} --password=${{secrets.docker_password}} registry.cn-hongkong.aliyuncs.com
          
     - name: Push the Docker image
-      run: docker push registry.cn-hongkong.aliyuncs.com/shino161/yukino:1
+      run: docker push registry.cn-hongkong.aliyuncs.com/shino161/yukino:${GITHUB_SHA}
 
 
