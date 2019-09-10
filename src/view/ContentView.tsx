@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Carousel, Card, Col, Row, Steps, PageHeader, Icon } from 'antd';
 const { Meta } = Card;
 const { Step } = Steps;
-import "./App.css";
+import "./style.css";
 
 class ContentView extends Component {
   render() {
