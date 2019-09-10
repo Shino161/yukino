@@ -23,7 +23,7 @@ jobs:
         npm run build:prod --if-present
         
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag registry.cn-hongkong.aliyuncs.com/shino161/yukino:10086
+      run: docker build . --file Dockerfile --tag registry.cn-hongkong.aliyuncs.com/shino161/yukino:1
       
     - name: Docker Registry
       uses: actions/docker/login@master
@@ -33,5 +33,4 @@ jobs:
         DOCKER_PASSWORD: ${{secrets.docker_password}}
         
     - name: Push the Docker image
-      shell: pwsh
-      run: docker push registry.cn-hongkong.aliyuncs.com/shino161/yukino:10086
+      run: sudo docker push registry.cn-hongkong.aliyuncs.com/shino161/yukino:1
