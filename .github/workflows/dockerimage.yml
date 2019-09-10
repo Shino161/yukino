@@ -33,4 +33,5 @@ jobs:
         DOCKER_PASSWORD: ${{secrets.docker_password}}
         
     - name: Push the Docker image
+      shell: bash
       run: docker push registry.cn-hongkong.aliyuncs.com/shino161/yukino:10086
