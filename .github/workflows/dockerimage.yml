@@ -25,7 +25,6 @@ jobs:
     - name: Docker Registry
       uses: actions/docker/login@master
       env:
-        DOCKER_REGISTRY_URL: registry.cn-hangzhou.aliyuncs.com
         DOCKER_USERNAME: ${{secrets.docker_username}}
         DOCKER_PASSWORD: ${{secrets.docker_password}}
         
