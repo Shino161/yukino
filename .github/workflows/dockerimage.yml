@@ -25,8 +25,8 @@ jobs:
     - name: Docker Registry
       uses: actions/docker/login@master
       env:
-        DOCKER_USERNAME: ${{secrets.docker_username}}
-        DOCKER_PASSWORD: ${{secrets.docker_password}}
+        DOCKER_USERNAME: ${{secrets.DOCKER_USERNAME}}
+        DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
         
     - name: Build the Docker image
       run: docker build . --file Dockerfile --tag registry.cn-hangzhou.aliyuncs.com/yukino/yukino:$(date +%s) && docker push registry.cn-hangzhou.aliyuncs.com/yukino/yukino:$(date +%s)
