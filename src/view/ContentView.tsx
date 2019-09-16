@@ -26,7 +26,7 @@ class ContentView extends Component {
             </Carousel>
           </Col>
         </Row>
-        <PageHeader  title="目录结构" subTitle="This is a subtitle" style={{ marginTop: 50 }}/>
+        <PageHeader  title="Simple" subTitle="This is a subtitle" style={{ marginTop: 50 }}/>
         <Row gutter={64}>
           {
             [...Array(4)].map((e, i) =>
@@ -40,7 +40,7 @@ class ContentView extends Component {
               </Col>)
           }
         </Row>
-        <PageHeader  title="目录结构" subTitle="This is a subtitle" style={{ marginTop: 50 }}/>
+        <PageHeader title="Simple" subTitle="This is a subtitle" style={{ marginTop: 50 }}/>
         <Row gutter={16}>
           <Steps current={1}>
             <Step title="Finished" description="This is a description." />
