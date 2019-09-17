@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { Carousel, Card, Col, Row, Steps, PageHeader, Icon, Typography, Divider } from 'antd';
 const { Meta } = Card;
 const { Step } = Steps;
-import "./style.css";
+import "./style.less";
 const { Title, Paragraph, Text } = Typography;
 
 class ContentView extends Component {
@@ -64,7 +64,7 @@ class ContentView extends Component {
         <Row gutter={16}>
           <Steps current={1}>
             <Step title="Finished" description="This is a description." />
-            <Step title="In Progress" description="This is a description." subTitle="Left 00:00:08" />
+            <Step title="In Progress" description="This is a description."/>
             <Step title="Waiting" description="This is a description." />
           </Steps>
         </Row>
