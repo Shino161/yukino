@@ -1,20 +1,22 @@
+import React, { Suspense, lazy } from 'react';
+const Home = lazy(() => import('../view/Home'));
+const About = lazy(() => import('../view/About'));
 export default [
   {
     path: "/",
-    component: () => import('@/view/ContentView')
+    component: Home,
+    // routes: [
+    //   {
+    //     path: "/tacos/bus",
+    //     component: Bus
+    //   },
+    //   {
+    //     path: "/tacos/cart",
+    //     component: Cart
+    //   }
+    // ]
+  }, {
+    path: "/about",
+    component: About,
   }
-  // {
-  //   path: "/tacos",
-  //   component: Tacos,
-  //   routes: [
-  //     {
-  //       path: "/tacos/bus",
-  //       component: Bus
-  //     },
-  //     {
-  //       path: "/tacos/cart",
-  //       component: Cart
-  //     }
-  //   ]
-  // }
 ];

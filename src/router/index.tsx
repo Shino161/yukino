@@ -1,6 +1,7 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import routes from './routes'
+import { log } from "util";
 
 function RouteWithSubRoutes(route:any) {
   return (
@@ -23,5 +24,7 @@ function RouteConfig() {
     </Router>
   );
 }
+
+console.log(RouteConfig);
 
 export default RouteConfig;
