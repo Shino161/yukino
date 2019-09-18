@@ -22,6 +22,4 @@ function RouteConfig() {
   );
 }
 
-console.log(RouteConfig);
-
 export default RouteConfig;
