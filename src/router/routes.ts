@@ -5,6 +5,7 @@ export default [
   {
     path: "/",
     component: Home,
+    exact: true
     // routes: [
     //   {
     //     path: "/tacos/bus",

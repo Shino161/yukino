@@ -1,10 +1,8 @@
 import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 import React, { Suspense, lazy } from 'react';
-import { Spin, Layout, Menu, Skeleton } from 'antd';
+import { Spin, Layout, Menu } from 'antd';
 const { Header, Content, Footer } = Layout;
-
-const Home = lazy(() => import('./view/Home'));
-const About = lazy(() => import('./view/About'));
+import RouterCofig from './router/index'
 
 const App = () => (
   <Router>
@@ -23,10 +21,7 @@ const App = () => (
       <Content style={{ padding: '0 50px' }}>
         <div style={{ padding: 24, minHeight: 280 }}>
           <Suspense fallback={<Spin size="large" style={{ position: 'fixed', top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }} />}>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-            </Switch>
+            <RouterCofig></RouterCofig>
           </Suspense>
         </div>
       </Content>

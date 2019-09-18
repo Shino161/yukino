@@ -1,9 +1,8 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import routes from './routes'
-import { log } from "util";
 
-function RouteWithSubRoutes(route:any) {
+function RouteWithSubRoutes(route: any) {
   return (
     <Route
       path={route.path}
@@ -15,13 +14,11 @@ function RouteWithSubRoutes(route:any) {
 }
 function RouteConfig() {
   return (
-    <Router>
-      <div>
-        {routes.map((route, i) => (
-          <RouteWithSubRoutes key={i} {...route} />
-        ))}
-      </div>
-    </Router>
+    <Switch>
+      {routes.map((route, i) => (
+        <RouteWithSubRoutes key={i} {...route} />
+      ))}
+    </Switch>
   );
 }
 
