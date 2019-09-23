@@ -10,7 +10,18 @@
     "moduleResolution": "node",
     "baseUrl": "src",
     "paths": {
-      "@": ["/*"]
+      "@config/*": [
+        "config/*"
+      ],
+      "@view/*": [
+        "view/*"
+      ],
+      "@router/*": [
+        "router/*"
+      ],
+      "@libs/*": [
+        "libs/*"
+      ]
     }
   }
 }
