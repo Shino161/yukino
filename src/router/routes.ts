@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'react';
+import React, { lazy } from 'react';
 const Home = lazy(() => import('../view/Home'));
 const About = lazy(() => import('../view/About'));
 export default [

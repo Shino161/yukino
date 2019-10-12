@@ -12,13 +12,12 @@ class HttpRequest {
       baseURL: this.baseUrl,
       headers: {
         'Content-Type': 'application/json;charset=UTF-8',
-        
       }
     }
     return config
   }
 
-  interceptors(instance:any, url:string) {
+  interceptors(instance:any) {
     instance.interceptors.request.use((config: any) => {
       return config
     }, (error: any) => {
@@ -39,7 +38,7 @@ class HttpRequest {
   request(options: any ) {
     const instance = axios.create()
     options = Object.assign(this.getInsideConfig(), options)
-    this.interceptors(instance, options.url)
+    this.interceptors(instance)
     return instance(options)
   }
 }

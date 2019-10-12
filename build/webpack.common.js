@@ -10,7 +10,7 @@ module.exports = {
     noParse: /jquery/,
     rules: [
       {
-        test: /\.(jsx|tsx|js|ts)$/,
+        test: /\.(tsx|ts)$/,
         loader: 'ts-loader',
         options: {
           transpileOnly: true,
