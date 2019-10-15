@@ -1,6 +1,6 @@
 export default {
   baseUrl: {
-    dev: 'dev',
-    pro: 'prod'
+    dev: '',
+    pro: ''
   }
 }

@@ -24,7 +24,7 @@ const Home = () => (
           <Col span={6} key={i}>
             <Card
               hoverable
-              cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />}
+              cover={<img alt="example" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg"/>}
             >
               <Meta title="Europe Street beat" description="www.instagram.com" />
             </Card>
