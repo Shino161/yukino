@@ -1,11 +1,12 @@
+
+<p align="center"><img width="300px" src="https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg"></p>
+<p align="center">
+<img src="https://github.com/Shino161/yukino/workflows/Docker-Image-CI/badge.svg?longCache=true&style=for-the-badge">
+<img src="https://img.shields.io/badge/language-TypeScript-blue.svg?longCache=true&style=for-the-badge">
+<img src="https://img.shields.io/badge/license-mit-blue.svg?longCache=true&style=for-the-badge">
+</p>
+
 # yukino
-![](https://img.shields.io/badge/language-JavaScript-orange.svg)
-![](https://img.shields.io/badge/language-TypeScript-blue.svg)
-![](https://github.com/Shino161/yukino/workflows/Docker-Image-CI/badge.svg)  
-
-  
-![logo@2x.jpeg](https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg)  
-
 ## 简介 Introduction
 一个 React + Ant-Design 前端脚手架,支持 TypeScript & JavaScript。
 + 使用 Webpack4 打包，构建速度优异 ✨
