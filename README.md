@@ -3,7 +3,7 @@
 <p align="center">
 <img src="https://github.com/Shino161/yukino/workflows/GithubAction/badge.svg">
 <img src="https://img.shields.io/badge/language-TypeScript-blue.svg">
-<img src="https://img.shields.io/badge/license-mit-green.svg">
+<img src="https://img.shields.io/badge/license-MIT-green.svg">
 </p>
 
 # yukino
