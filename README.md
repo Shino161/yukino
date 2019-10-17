@@ -1,9 +1,9 @@
 
-<p align="center"><img width="300px" src="https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg"></p>
+<p align="center"><img width="100px" src="https://i.loli.net/2019/08/26/p12idEoYW6j9Bg7.jpg"></p>
 <p align="center">
-<img src="https://github.com/Shino161/yukino/workflows/Docker-Image-CI/badge.svg?longCache=true&style=for-the-badge">
-<img src="https://img.shields.io/badge/language-TypeScript-blue.svg?longCache=true&style=for-the-badge">
-<img src="https://img.shields.io/badge/license-mit-blue.svg?longCache=true&style=for-the-badge">
+<img src="https://github.com/Shino161/yukino/workflows/Docker-Image-CI/badge.svg">
+<img src="https://img.shields.io/badge/language-TypeScript-blue.svg">
+<img src="https://img.shields.io/badge/license-mit-green.svg">
 </p>
 
 # yukino
