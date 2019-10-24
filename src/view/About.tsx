@@ -1,6 +1,8 @@
 
 import React, { useState, useEffect } from 'react';
 import { Button } from 'antd'
+import style from "./style.less";
+
 function Example() {
   const [count, setCount] = useState(0); 
   useEffect(() => {
@@ -9,7 +11,7 @@ function Example() {
   });
   return (
     <div>
-      <p>You clicked {count} times</p>
+      <p className={style.title}>You clicked {count} times</p>
       <Button onClick={() => setCount(count + 1)}>
         Click me
       </Button>

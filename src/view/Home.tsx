@@ -1,12 +1,12 @@
 import React, { Suspense, lazy } from "react";
 import { Card, Col, Row, Steps, PageHeader, Icon, Typography, Divider, Skeleton } from 'antd';
 
+
 const CarouselComp = React.lazy(() => import('./CarouselComp'));
 const { Meta } = Card;
 const { Step } = Steps;
 const { Title, Paragraph, Text } = Typography;
 
-import "./style.less";
 
 const Home = () => (
   <div>

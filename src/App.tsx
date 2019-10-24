@@ -3,7 +3,7 @@ import React, { Suspense } from 'react';
 import { Spin, Layout, Menu } from 'antd';
 const { Header, Content, Footer } = Layout;
 import RouterCofig from './router/index'
-
+import './global.less'
 const App = () => (
   <Router>
     <Layout className="layout" style={{ background: '#fff' }}>

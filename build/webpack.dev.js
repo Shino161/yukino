@@ -13,27 +13,43 @@ module.exports = merge(common, {
     publicPath: '/'
   },
   module: {
-    rules:[
+    rules: [
       {
-        test: /\.css$/,
+        test: /\.(css|less)$/,
+        exclude: /node_modules/,
         use: [
           'style-loader',
-          'css-loader'
-        ],
-      },
-      {
-        test: /\.less$/,
-        use: [
-          'style-loader',
-          'css-loader',
+          {
+            loader: "css-loader",
+            options: {
+              modules: {
+                mode: 'local',
+                localIdentName: '[path][name]__[local]--[hash:base64:5]',
+              }
+            }
+          },
           {
             loader: "less-loader",
             options: {
               javascriptEnabled: true
             }
           }
-        ]
-      }
+        ],
+      },
+      {
+        test: /\.(css|less)$/,
+        include: /node_modules/,
+        use: [
+          'style-loader',
+          "css-loader",
+          {
+            loader: "less-loader",
+            options: {
+              javascriptEnabled: true
+            }
+          }
+        ],
+      },
     ]
   },
   devServer: {
@@ -49,12 +65,12 @@ module.exports = merge(common, {
     // }]
     proxy: {
       '/api': {
-          target: 'http://localhost:3000',
-          changeOrigin: true,
-          ws: true,
-          pathRewrite: {
-            '^/api': ''
-          }
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        ws: true,
+        pathRewrite: {
+          '^/api': ''
+        }
       }
     }
   }

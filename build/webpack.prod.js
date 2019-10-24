@@ -57,7 +57,15 @@ module.exports = merge(common, {
                             publicPath: '../',
                         },
                     },
-                    'css-loader',
+                    {
+                        loader: "css-loader",
+                        options: {
+                            modules: {
+                                mode: 'local',
+                                localIdentName: '[hash:base64]',
+                            }
+                        }
+                    },
                     {
                         loader: "less-loader",
                         options: {

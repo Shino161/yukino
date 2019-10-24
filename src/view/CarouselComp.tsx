@@ -1,6 +1,5 @@
 import React from "react";
 import { Carousel} from 'antd';
-
 const CarouselComp = () => (
   <div>
     <Carousel autoplay >
