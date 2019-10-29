@@ -14,7 +14,7 @@
 + 通过 React.lazy 进行组件懒加载和页面懒加载 ✨
 + TS 或者 JS 均可按需引用 Antd 组件 ✨
 + CSS 模块化，避免样式复杂后引起相互污染 ✨
-
++ 支持 Docker 部署（Nginx镜像）
 ![1567754482325.jpg](https://i.loli.net/2019/09/06/p8Ktkc1UQDJ7dFH.jpg)
 
 ## 演示地址
