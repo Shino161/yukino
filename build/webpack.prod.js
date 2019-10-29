@@ -50,6 +50,7 @@ module.exports = merge(common, {
         rules: [
             {
                 test: /\.(c|le)ss$/,
+                exclude: /node_modules/,
                 use: [
                     {
                         loader: MiniCssExtractPlugin.loader,
@@ -66,6 +67,25 @@ module.exports = merge(common, {
                             }
                         }
                     },
+                    {
+                        loader: "less-loader",
+                        options: {
+                            javascriptEnabled: true
+                        }
+                    }
+                ],
+            },
+            {
+                test: /\.(c|le)ss$/,
+                include: /node_modules/,
+                use: [
+                    {
+                        loader: MiniCssExtractPlugin.loader,
+                        options: {
+                            publicPath: '../',
+                        },
+                    },
+                    "css-loader",
                     {
                         loader: "less-loader",
                         options: {
