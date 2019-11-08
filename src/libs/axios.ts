@@ -16,7 +16,6 @@ class HttpRequest {
     }
     return config
   }
-
   interceptors(instance:any) {
     instance.interceptors.request.use((config: any) => {
       return config
