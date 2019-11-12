@@ -18,7 +18,7 @@
 ![1567754482325.jpg](https://i.loli.net/2019/09/06/p8Ktkc1UQDJ7dFH.jpg)
 
 ## 演示地址
-https://hensin.cocoiii.com/
+http://hensin.cocoiii.com/
 
 ## 如何使用 How to use it
 ### 安装运行
