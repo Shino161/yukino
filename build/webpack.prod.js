@@ -4,6 +4,8 @@ const merge = require('webpack-merge');
 const common = require('./webpack.common.js');
 // 打包之前清除文件
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+// 生成拥有稳定 hash 的模块
+const { HashedModuleIdsPlugin } = require('webpack');
 // 压缩CSS插件
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // 压缩CSS和JS代码
@@ -123,6 +125,7 @@ module.exports = merge(common, {
     },
     plugins: [
         new CleanWebpackPlugin(),
+        new HashedModuleIdsPlugin(),
         new MiniCssExtractPlugin({
             filename: 'css/[name].[contenthash].css',
             chunkFilename: 'css/[id].[contenthash].css',
