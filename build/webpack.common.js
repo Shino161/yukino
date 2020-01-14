@@ -30,7 +30,7 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         loader: "babel-loader",
-        exclude: /(node_modules|bower_components)/
+        exclude: /(node_modules)/
       },
       {
         test: /\.(eot|woff|woff2|ttf|svg|png|jpe?g|gif|mp4|webm)(\?\S*)?$/,

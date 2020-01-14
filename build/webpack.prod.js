@@ -63,6 +63,7 @@ module.exports = merge(common, {
                     {
                         loader: "css-loader",
                         options: {
+                            // CSS 模块化配置
                             modules: {
                                 mode: 'local',
                                 localIdentName: '[hash:base64]',
