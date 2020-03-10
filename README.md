@@ -42,3 +42,10 @@ npm run build:prod / yarn run prod:dev
 docker build -t yukino .
 docker run -d --name yukino -p8099:80 yukino
 ```
+
+## 还需要做的事情 Task list
+- [ ] 解决路径解析（@）问题
+- [ ] 解决跨域或baseUrl问题
+- [x] 代码分割
+- [x] eslint
+- [x] webpack build 钩子
