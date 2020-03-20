@@ -7,7 +7,7 @@
     "dev": "webpack-dev-server --hot --progress --inline --config build/webpack.dev.js",
     "build:dev": "webpack --mode development --progress --config build/webpack.prod.js ",
     "build:prod": "webpack --progress --config build/webpack.prod.js",
-    "build:prod:invoke": "node ./node.js"
+    "build:prod:invoke": "node ./webpack.build.hook.js"
   },
   "author": "shino161",
   "license": "ISC",
