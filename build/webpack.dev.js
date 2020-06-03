@@ -10,7 +10,7 @@ module.exports = merge(common, {
     filename: 'js/[name].[hash].js',
     chunkFilename: 'js/[name].[hash].js',
     path: path.resolve(__dirname, '../dist'),
-    publicPath: '/'
+    publicPath: '/',
   },
   module: {
     rules: [
@@ -20,20 +20,22 @@ module.exports = merge(common, {
         use: [
           'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               modules: {
                 mode: 'local',
                 localIdentName: '[path][name]__[local]--[hash:base64:5]',
-              }
-            }
+              },
+            },
           },
           {
-            loader: "less-loader",
+            loader: 'less-loader',
             options: {
-              javascriptEnabled: true
-            }
-          }
+              lessOptions: {
+                javascriptEnabled: true,
+              },
+            },
+          },
         ],
       },
       {
@@ -41,16 +43,18 @@ module.exports = merge(common, {
         include: /node_modules/,
         use: [
           'style-loader',
-          "css-loader",
+          'css-loader',
           {
-            loader: "less-loader",
+            loader: 'less-loader',
             options: {
-              javascriptEnabled: true
-            }
-          }
+              lessOptions: {
+                javascriptEnabled: true,
+              },
+            },
+          },
         ],
       },
-    ]
+    ],
   },
   devServer: {
     historyApiFallback: true,
@@ -73,5 +77,5 @@ module.exports = merge(common, {
     //     }
     //   }
     // }
-  }
-});
+  },
+})
