@@ -3,21 +3,18 @@ const Home = lazy(() => import('../view/Home'));
 const About = lazy(() => import('../view/About'));
 export default [
   {
-    path: "/",
+    path: '/',
     component: Home,
-    exact: true
+    exact: true,
     // routes: [
     //   {
     //     path: "/tacos/bus",
     //     component: Bus
     //   },
-    //   {
-    //     path: "/tacos/cart",
-    //     component: Cart
-    //   }
     // ]
-  }, {
-    path: "/about",
+  },
+  {
+    path: '/about',
     component: About,
-  }
-];
+  },
+]
